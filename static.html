@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Medilab - Medical Center</title>
+    <meta name="description" content="Medical center and healthcare services">
+    
+    <!-- Simple CSS -->
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Header styles */
+        .topbar {
+            background: #1977cc;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Navigation */
+        .header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        .branding {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1977cc;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: #2c4964;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: #1977cc;
+        }
+
+        .cta-btn {
+            background: #1977cc;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        /* Hero section */
+        .hero {
+            background: url('assets/img/hero-bg.jpg') center/cover;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* About section */
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .about h2 {
+            color: #2c4964;
+            margin-bottom: 20px;
+        }
+
+        /* Stats section */
+        .stats {
+            background: #f1f7fd;
+            padding: 60px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 36px;
+            color: #1977cc;
+            font-weight: bold;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="mailto:contact@example.com">contact@example.com</a>
+                <a href="tel:+15589554885">+1 5589 55488 55</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="branding">
+                <a href="#" class="logo">Medilab</a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#appointment" class="cta-btn">Make an Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Medilab</h1>
+                <p>We provide quality healthcare services with a team of experienced professionals</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/img/about.jpg" alt="About Medilab">
+                </div>
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>We are dedicated to providing the highest quality medical care to our community. Our team of experienced healthcare professionals works tirelessly to ensure the well-being of our patients.</p>
+                    <ul>
+                        <li>State-of-the-art medical facilities</li>
+                        <li>Experienced medical professionals</li>
+                        <li>24/7 emergency services</li>
+                        <li>Comprehensive healthcare solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">85</div>
+                    <p>Doctors</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">18</div>
+                    <p>Departments</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <p>Research Labs</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150</div>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
