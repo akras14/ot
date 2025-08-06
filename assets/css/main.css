@@ -937,15 +937,23 @@ section,
   z-index: 3;
 }
 
+.hero .welcome {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+}
+
 .hero .welcome h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero .welcome p {
   font-size: 24px;
   margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero .content {
